@@ -25,7 +25,9 @@ const StudentCard = ({ student, children }: StudentCardProps) => {
       whileHover={{ scale: 1.04 }}
       className="p-6 bg-white/80 backdrop-blur-md border border-gray-100 rounded-2xl shadow-lg hover:shadow-2xl hover:border-indigo-300 transition-all duration-300"
     >
-      <h2 className="font-extrabold text-xl text-indigo-800 mb-2">{student.name}</h2>
+      <h2 className="font-extrabold text-xl text-indigo-800 mb-2">
+        {student.name}
+      </h2>
       <p className="text-gray-600">🎓 {student.major}</p>
       <p className="text-gray-600">📊 GPA: {student.gpa}</p>
       {children && <div className="mt-4 flex flex-wrap gap-2">{children}</div>}
@@ -78,8 +80,8 @@ const App = () => {
     { id: 13, name: "Mahadun, Vanda", major: "Akuntansi", gpa: 3.8 },
     { id: 14, name: "Wungkana, Wulan", major: "Manajemen", gpa: 3.6 },
     { id: 15, name: "Selah, Cintadya", major: "Manajemen", gpa: 3.7 },
-    { id: 16, name: "Mandry, Svetlana", major: "AirPro", gpa: 3.9 },
-    { id: 17, name: "Makalew, Hikaru", major: "AirPro", gpa: 3.5 },
+    { id: 16, name: "Mandry, Svetlana", major: "Ipro", gpa: 3.9 },
+    { id: 17, name: "Makalew, Hikaru", major: "Ipro", gpa: 3.5 },
     { id: 18, name: "Widayat, Moses", major: "Manajemen", gpa: 3.4 },
     { id: 19, name: "Tintingon, Nicholien", major: "Akuntansi", gpa: 3.3 },
     { id: 20, name: "Rumampuk, Cantika", major: "Akuntansi", gpa: 3.2 },
@@ -122,7 +124,11 @@ const App = () => {
             🔍
           </span>
         </div>
-        <Filter majors={majors} selectedMajor={selectedMajor} onChange={setSelectedMajor} />
+        <Filter
+          majors={majors}
+          selectedMajor={selectedMajor}
+          onChange={setSelectedMajor}
+        />
       </div>
 
       {/* Grid cards */}
@@ -164,7 +170,9 @@ const App = () => {
               </StudentCard>
             ))
           ) : (
-            <p className="text-gray-500 text-center col-span-full">🚫 Tidak ada mahasiswa ditemukan.</p>
+            <p className="text-gray-500 text-center col-span-full">
+              🚫 Tidak ada mahasiswa ditemukan.
+            </p>
           )}
         </AnimatePresence>
       </motion.div>
