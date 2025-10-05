@@ -64,7 +64,7 @@ const App = () => {
 
   const students: Student[] = [
     { id: 1, name: "Lumenta, Hizkia", major: "Informatika", gpa: 4.0 },
-    { id: 2, name: "Rantung, Chelsea", major: "Manajemen", gpa: 3.7 },
+    { id: 2, name: "Rantung, Chelsea", major: "Informatika", gpa: 3.7 },
     { id: 3, name: "Resilooy, Alfonso", major: "Informatika", gpa: 3.5 },
     { id: 4, name: "Hardiyanti, Niha", major: "Akuntansi", gpa: 3.8 },
     { id: 5, name: "Devina, Mowendu", major: "Akuntansi", gpa: 4.0 },
@@ -78,12 +78,13 @@ const App = () => {
     { id: 13, name: "Mahadun, Vanda", major: "Akuntansi", gpa: 3.8 },
     { id: 14, name: "Wungkana, Wulan", major: "Manajemen", gpa: 3.6 },
     { id: 15, name: "Selah, Cintadya", major: "Manajemen", gpa: 3.7 },
-    { id: 16, name: "Mandry, Svetlana", major: "AirPro", gpa: 3.9 },
-    { id: 17, name: "Makalew, Hikaru", major: "AirPro", gpa: 3.5 },
+    { id: 16, name: "Mandry, Svetlana", major: "AiPro", gpa: 3.9 },
+    { id: 17, name: "Makalew, Hikaru", major: "AiPro", gpa: 3.5 },
     { id: 18, name: "Widayat, Moses", major: "Manajemen", gpa: 3.4 },
     { id: 19, name: "Tintingon, Nicholien", major: "Akuntansi", gpa: 3.3 },
     { id: 20, name: "Rumampuk, Cantika", major: "Akuntansi", gpa: 3.2 },
-    { id: 21, name: "Resilooy, Alfonso", major: "Akuntansi", gpa: 3.5 },
+    { id: 21, name: "Kansil, Chelsea", major: "Akuntansi", gpa: 3.5 },
+    { id: 22, name: "Tapahing, Chelsea", major: "Manajemen", gpa: 3.5 },
   ];
 
   const majors = Array.from(new Set(students.map((s) => s.major)));
